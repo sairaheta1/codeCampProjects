@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Employee Satisfaction Survey</h1>
+    <p id="description">Thank you for taking the time to help us make improvements in the workplace</p>
+    <form id="survey-form" class="survey">
+      <fieldset>
+        <label id="name-label">Name<input type="text" required id="name" placeholder="John Doe"/></label>
+        <label id="email-label">Email<input type="email" required id="email" placeholder="jdoe@company.com"/></label>
+        <label id="number-label">Age (optional)<input type="number" min="16" max="70" id="number" placeholder="24">
+      </fieldset>
+      <fieldset>
+        <label class="question">Do you enjoy our company's culture?</label>
+        <select id="dropdown">
+          <option value="select-one">(select one)</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label class="question">Do you feel connected to your coworker's?</label>
+        <label><input type="radio" name="coworker-connection" value="strongly-disagree" class="inline">Strongly Disagree</label>
+        <label><input type="radio" name="coworker-connection" value="disagree" class="inline">Disagree</label>
+        <label><input type="radio" name="coworker-connection" value="neutral" class="inline">Neutral</label>
+        <label><input type="radio" name="coworker-connection" value="agree" class="inline">Agree</label>
+        <label><input type="radio" name="coworker-connection" value="strongly-agree" class="inline">Stongly Agree</label>
+      </fieldset>
+      <fieldset>
+        <label class="question">In what area's can our company improve? (Check all that apply)</label>
+        <label><input type="checkbox" value="management" class="inline">Management</label>
+        <label><input type="checkbox" value="resources"class="inline">Resources</label>
+        <label><input type="checkbox" value="feedback" class="inline">Feedback</label>
+        <label><input type="checkbox" value="schedule-flexibility" class="inline">Schedule Flexibility</label>
+      </fieldset>
+      <fieldset class="section-4">
+        <label class="question">Are there any additional comments or anything that was not addressed that you would like to touch on?<textarea placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </body>
+
+</html>
